@@ -22,8 +22,8 @@
   /* on "bottom" */
   linear-gradient(
     to bottom,
-    #aaa,
-    #333
+    #666,
+    #555
   );
   color:white;
   font-weight:bold;
