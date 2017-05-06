@@ -23,6 +23,7 @@ def getNews():
         cellInfo['lifeimagehash'] = lifenews['lifeImageHashList'][ind]
         cellInfo['profileimagehash'] = lifenews['profileImageHashList'][ind]
         cellInfo['wechatprofileimage'] = lifenews['wechat_profileimageList'][ind]
+        cellInfo['likecount'] = lifenews['likecountList'][ind]
 
         # Converted info
         cellInfo['datetime'] = toDatetime(lifenews['timestampList'][ind])
