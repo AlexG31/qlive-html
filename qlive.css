@@ -38,3 +38,8 @@
   background-position: center center;
   background-size: cover;
 }
+
+.question_content {
+    background-color: #3b4046;
+    color:#FFFFFF;
+}
