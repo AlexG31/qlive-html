@@ -25,7 +25,7 @@ SECRET_KEY = 'bhn4*d-6#d^)h%a_!t2n3@ti6e7cb#alc1xnl60631s429pq)i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', ]
+ALLOWED_HOSTS = ['localhost', 'www.gomass.xyz', 'gomass.xyz', 'wechat.gomass.xyz']
 
 
 # Application definition
