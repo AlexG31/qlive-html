@@ -43,7 +43,11 @@
           <span><div class="user_profile" style="background-image:url(http://www.gomass.xyz/images/sample_profile.png);"></div></span>
           Awesome blog post title <small>3/6/2015</small></h3>
           <img class="thumbnail" src="http://www.gomass.xyz/images/fox.jpg">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+          <p>
+            {% for text in data_list %}
+            <li><b>{{ text}}</b></li>
+            {% endfor %}
+          </p>
           <div class="callout">
             <ul class="menu simple">
               <li><a href="#">Author: Mike Mikers</a></li>
@@ -51,6 +55,28 @@
             </ul>
           </div>
         </div>
+        
+        {% for info in data_list %}
+        <div class="blog-post">
+          <h5>
+          <span><div class="user_profile" style="background-image:url(http://www.gomass.xyz/images/sample_profile.png);"></div></span>
+          {{info.nickname}} <small>{{info.datetime}}</small></h5>
+          {% if info.lifeimagehash|length > 0 %}
+          <img class="thumbnail" src="http://www.gomass.xyz/images/fox.jpg">
+          {% endif %}
+
+        {% for content_line in info.htmlcontent%}
+            <p>{{content_line}}</p>
+        {% endfor %}
+         
+          <div class="callout">
+            <ul class="menu simple">
+              <li><a href="#">Author: Mike Mikers</a></li>
+              <li><a href="#">Comments: 3</a></li>
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
 
         <div class="blog-post">
           <h3>Awesome blog post title <small>3/6/2015</small></h3>
