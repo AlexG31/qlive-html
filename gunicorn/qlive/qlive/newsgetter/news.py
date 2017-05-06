@@ -1,6 +1,6 @@
 #encoding:utf8
 import os, sys, pdb, requests, time, json
-import datetime
+import datetime, humanize
 
 def getNews():
     url = ur'https://wechat.gomass.xyz/polls/getLifeFeed'
@@ -26,11 +26,17 @@ def getNews():
 
         # Converted info
         cellInfo['datetime'] = toDatetime(lifenews['timestampList'][ind])
+        cellInfo['humantime'] = toHumantime(lifenews['timestampList'][ind])
         cellInfo['htmlcontent'] = htmlProcess(cellInfo['content'])
         infoList.append(cellInfo)
 
 
     return infoList
+
+def toHumantime(timestamp):
+    timegap = time.time() - int(timestamp) / 1000 
+    humantime = humanize.naturaltime(timegap)
+    return humantime
 
 def htmlProcess(text):
     # htmlcontent = text.replace('\n', '</p><br />\n<p>')
