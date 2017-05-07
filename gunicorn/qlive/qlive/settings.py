@@ -26,6 +26,7 @@ SECRET_KEY = 'bhn4*d-6#d^)h%a_!t2n3@ti6e7cb#alc1xnl60631s429pq)i'
 DEBUG = True
 
 ALLOWED_HOSTS = [u'localhost',
+        u'139.162.79.229',
         u'www.gomass.xyz',
         u'gomass.xyz',
         u'wechat.gomass.xyz']
