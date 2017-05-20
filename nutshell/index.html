@@ -1,15 +1,47 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  
+  <title>Nutshell - open for knowledge</title>
+  
+  <link rel="stylesheet" href="redcss/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-<title>Nutshell - open for knowledge</title>
-<h1> Welcome to nutshell!</h1>
-<image src="www.gomass.xyz/nutshell/images/nutshell.jpg"></image>
-<div class="addhost">
-    <input>Name</input>
-    <button>Submit</button>
-</div>
+<body style="padding:20px; margin:20px;">
+
+<!-- <h1> Welcome to nutshell!</h1>
+<image src="http://www.gomass.xyz/nutshell/images/nutshell.jpg" 
+style="height:80px; width:80px;"></image> -->
+<!-- <div class="" style="width:100%;margin-left:10%;"> -->
+  <form style="min-width:400px;" action="/collegehosts/addhost" method="post">
+      <header>个人信息</header>
+      <label>姓名 <span>*</span></label>
+      <input name="name"/>
+      <div class="help">At least 6 character</div>
+      <label>性别 <span>*</span></label>
+      <div class="radiobuttonlist">
+          <input class="radio" type="radio" name="gender" value="男" checked> 男<br>
+          <input class="radio" type="radio" name="gender" value="女"> 女<br>
+          <input class="radio" type="radio" name="gender" value="保密"> 保密
+      </div>
+      
+
+      <label>年级 <span>*</span></label>
+      <input name="grade"/>
+      <label>学校 <span>*</span></label>
+      <input/>
+      <label>专业 <span>*</span></label>
+      <input name="major"/>
+      <label>自我介绍 <span>*</span></label>
+      <input name="description" />
+      <div class="help">Use upper and lowercase lettes as well</div>
+      <button>提交</button>
+  </form>
+  
+
 
 </body>
 </html>
