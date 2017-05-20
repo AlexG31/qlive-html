@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background: tomato;
+  background: #5f5f5f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ form {
   border-radius: 10px;
 }
 form header {
-  background: rgb(102, 153, 0);
+  background: #69C5E4;
   padding: 30px 20px;
   color: white;
   font-size: 1.2em;
