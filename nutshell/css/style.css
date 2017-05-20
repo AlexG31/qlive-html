@@ -1,0 +1,6 @@
+.radiobuttonlist{
+  display: flex;
+}
+.radiobuttonlist .radio{
+  width:10%;
+}
