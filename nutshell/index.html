@@ -20,24 +20,31 @@ style="height:80px; width:80px;"></image> -->
       <header>个人信息</header>
       <label>姓名 <span>*</span></label>
       <input name="name"/>
-      <div class="help">At least 6 character</div>
-      <label>性别 <span>*</span></label>
+      <div class="help">必填项</div>
+      <label>性别 </label>
       <div class="radiobuttonlist">
-          <input class="radio" type="radio" name="gender" value="男" checked> 男<br>
+          <input class="radio" type="radio" name="gender" value="男" > 男<br>
           <input class="radio" type="radio" name="gender" value="女"> 女<br>
-          <input class="radio" type="radio" name="gender" value="保密"> 保密
+          <input class="radio" type="radio" name="gender" value="保密" checked> 保密
       </div>
       
 
-      <label>年级 <span>*</span></label>
+      <label>年级 </label>
       <input name="grade"/>
-      <label>学校 <span>*</span></label>
+      <label>学校 </label>
       <input name="school"/>
       <label>专业 <span>*</span></label>
       <input name="major"/>
-      <label>自我介绍 <span>*</span></label>
+      <div class="help">必填项</div>
+      
+      <label>封面简短自我介绍 </label>
+      <input name="short_description" />
+      <label>自我介绍 </label>
       <input name="description" />
-      <div class="help">Use upper and lowercase lettes as well</div>
+      
+      <label>wechat openid <span style="margin-left: 200px;">*</span></label>
+      <input name="wechat_openid" />
+      <div class="help">小程序内个人主页位于头像之下的字符串</div>
       <button>提交</button>
   </form>
   
